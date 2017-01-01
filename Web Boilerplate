@@ -1,7 +1,7 @@
 npm init
 npm install express --save
 npm install gulp --save
-npm install livereload --save
+npm install --save-dev gulp-livereload
 
 ```
 var gulp = require('gulp');
