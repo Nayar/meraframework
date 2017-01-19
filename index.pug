@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        title Mera Cloud
+        link(href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet")
+        script(src="//vuejs.org/js/vue.js" type="text/javascript")
+        script.
+            var plol
+            window.onload = function(){
+                
+                v= new Vue({
+                    el: '#app',
+                    data: {
+                        title: 'Mera Cloud',
+                        roles: [{name:'apache2'},{name:'php5'},{name:'haproxy',configurable: true},{name:'mysql',configurable: true},{name:'monit'}],
+                        vms: [
+                            {
+                                status: "on",
+                                hostname: "prod-idc7-www",
+                                production: "prod",
+                                ip: "100.64.111.53",
+                                roles: [{name:'apache2'},{name:'php5'},{name:'haproxy',configurable: true}],
+                                cpu: 4,
+                                ram: 4,
+                                hdd: 100
+                            }
+                        ]
+                    },
+                    methods: {
+
+                    }
+                })
+            }
+            
+            
+            
+            
+    body
+        .container#app
+            h1 {{title}}
+            
+            
