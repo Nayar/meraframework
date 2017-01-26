@@ -1,0 +1,10 @@
+[Unit]
+Description=Nayar Dashboard
+
+[Service]
+WorkingDirectory=/root/Mera-Dashboard/
+ExecStart=/usr/local/bin/gulp serve
+
+[Install]
+WantedBy=multi-user.target
+ 
