@@ -1,0 +1,20 @@
+{
+  "name": "nayarweb.com",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Nayar Joolfoo <nayar@joolfoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^3.0.0"
+  }
+}
